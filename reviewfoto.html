@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <style>
+    summary {
+      list-style: none;
+      cursor: pointer;
+    }
+    img.thumbnail {
+      width: 150px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .preview {
+      max-width: 90%;
+      margin-top: 10px;
+    }
+    details[open] summary::after {
+      content: " (klik lagi untuk tutup)";
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Review Gambar Klik</h2>
+
+<details>
+  <summary><img src="yolan1.jpg" alt="Klik untuk preview" class="thumbnail"></summary>
+  <img src="yolan1.jpg" alt="Preview Besar" class="preview">
+  <p>Ini adalah gambar yang sedang di-review. Tambahkan deskripsi atau info lainnya di sini.</p>
+</details>
+
+</body>
+</html>
